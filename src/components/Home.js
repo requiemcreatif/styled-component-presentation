@@ -2,26 +2,21 @@ import styled from "styled-components";
 
 const Home = ({images}) => {
 
-
 /*MAIN CONTAINER*/
     const MainContainer = styled.div`
         margin: 0 auto;
         max-width: 1300px;
         box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-
     `
 /*STYLING NAVBAR*/
-
     const Navbar = styled.nav`
         padding: 2rem;
-        background-color: #026E81;
-        
+        background-color: #026E81;    
     `
     const UnorderedList = styled.ul`
         display: flex;
         list-style: none;
         justify-content: space-around;
-
     `
     const Link = styled.a`
         text-decoration: none;
@@ -82,14 +77,14 @@ const Home = ({images}) => {
         border: 1px solid #ccc;
     `
     /*FOOTER*/
-    const Footer = styled.footer`
+    const Footer = styled.div`
         text-align: center;
         background-color: #00ABBD;
         padding: 2rem;
     `
 
     return ( 
-        <MainContainer>
+        <MainContainer> 
         {/* PART 1 */}
             <Navbar>
                 <UnorderedList>
